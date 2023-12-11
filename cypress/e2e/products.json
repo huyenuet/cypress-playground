@@ -1,0 +1,38 @@
+[
+    {
+        "cardTitle": "Samsung galaxy s6",
+        "cardPrice": "$360"
+    },
+    {
+        "cardTitle": "Nokia lumia 1520",
+        "cardPrice": "$820"
+    },
+    {
+        "cardTitle": "Nexus 6",
+        "cardPrice": "$650"
+    },
+    {
+        "cardTitle": "Samsung galaxy s7",
+        "cardPrice": "$800"
+    },
+    {
+        "cardTitle": "Iphone 6 32gb",
+        "cardPrice": "$790"
+    },
+    {
+        "cardTitle": "Sony xperia z5",
+        "cardPrice": "$320"
+    },
+    {
+        "cardTitle": "HTC One M9",
+        "cardPrice": "$700"
+    },
+    {
+        "cardTitle": "Sony vaio i5",
+        "cardPrice": "$790"
+    },
+    {
+        "cardTitle": "Sony vaio i7",
+        "cardPrice": "$790"
+    }
+]
