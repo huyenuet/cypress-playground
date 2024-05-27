@@ -1,5 +1,6 @@
 export class HeroComponent {
     static CONTAINER_SEL = '.showcase-hero';
+    container;
     
     // TODO: change the syntax to Typescript
     constructor(container) {

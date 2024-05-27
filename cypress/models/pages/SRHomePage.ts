@@ -1,7 +1,7 @@
-import { HeroComponent } from "../components/simply_recipes/HeroComponent";
+import { HeroComponent } from "../components/HeroComponent";
 
 export class SRHomePage {
-    heroComponent() {
+    get heroComponent() {
         return new HeroComponent(cy.get(HeroComponent.CONTAINER_SEL))
     }
 }
