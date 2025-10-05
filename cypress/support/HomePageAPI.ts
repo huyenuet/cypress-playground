@@ -1,13 +1,11 @@
 export class HomePageAPI {
     getHomePagePhones() {
         cy.intercept('/entries').as('entries')  // make an alias
-        cy.wait('@entries')
-        return cy.get('@entries')
+        return cy.wait('@entries', {timeout: 10000}) // wait for the alias
     }
 
-    // static getHomePageLaptops() {
-    //     cy.intercept('POST', '/bycat').as('bycat')
-    //     cy.wait('@bycat')
-    //     return cy.get('@bycat')
-    // }
+    getHomePageLaptops() {
+        cy.intercept('POST', '/bycat').as('bycat')
+        return cy.wait('@bycat')
+    }
 }

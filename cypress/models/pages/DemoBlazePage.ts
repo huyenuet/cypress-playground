@@ -5,8 +5,13 @@ type CardData = {
 export class DemoBlazePage {
 
     _getCardDetails() {
-        let cardData: CardData;
-        cy.get('.card-title').then($title => cardData.cardTitle = $title.text().trim())
+        let cardData: CardData = {
+            cardTitle: '',
+            cardPrice: ''
+        };
+        cy.get('.card-title').then($title => {
+            cardData.cardTitle = $title.text().trim()
+        })
         cy.get('h5').then($price => cardData.cardPrice = $price.text().trim())
         return new Cypress.Promise(resolve => resolve(cardData))
     }
